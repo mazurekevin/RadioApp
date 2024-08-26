@@ -14,6 +14,9 @@
 		39F722162C77C17C00DB0CD1 /* RadioAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F722152C77C17C00DB0CD1 /* RadioAppTests.swift */; };
 		39F722202C77C17C00DB0CD1 /* RadioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F7221F2C77C17C00DB0CD1 /* RadioAppUITests.swift */; };
 		39F722222C77C17C00DB0CD1 /* RadioAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F722212C77C17C00DB0CD1 /* RadioAppUITestsLaunchTests.swift */; };
+		6862D899FC8BBEBB2FE1FCD2 /* Pods_RadioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDF6997E2E6205D5B94D831 /* Pods_RadioApp.framework */; };
+		F9DC496DB647B16417901F06 /* Pods_RadioAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4A6FBA2B103D344355346F /* Pods_RadioAppTests.framework */; };
+		FD57061AB11C07A564150308 /* Pods_RadioApp_RadioAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CE3C588BD3687DBB84ABF7 /* Pods_RadioApp_RadioAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BE4A4B43A71D6295BD00FB9 /* Pods-RadioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioApp.debug.xcconfig"; path = "Target Support Files/Pods-RadioApp/Pods-RadioApp.debug.xcconfig"; sourceTree = "<group>"; };
 		39F722012C77C17B00DB0CD1 /* RadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F722042C77C17B00DB0CD1 /* RadioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAppApp.swift; sourceTree = "<group>"; };
 		39F722062C77C17B00DB0CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,14 @@
 		39F7221B2C77C17C00DB0CD1 /* RadioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F7221F2C77C17C00DB0CD1 /* RadioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAppUITests.swift; sourceTree = "<group>"; };
 		39F722212C77C17C00DB0CD1 /* RadioAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		58E61ED9493CAF091B13049C /* Pods-RadioApp-RadioAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioApp-RadioAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-RadioApp-RadioAppUITests/Pods-RadioApp-RadioAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A2042214F69AFF00797ADE4 /* Pods-RadioAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioAppTests.release.xcconfig"; path = "Target Support Files/Pods-RadioAppTests/Pods-RadioAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D4A6FBA2B103D344355346F /* Pods_RadioAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDF6997E2E6205D5B94D831 /* Pods_RadioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA03292A78081536608158D6 /* Pods-RadioAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RadioAppTests/Pods-RadioAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1CE3C588BD3687DBB84ABF7 /* Pods_RadioApp_RadioAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioApp_RadioAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3B55AE096C9FF8CCFF937D /* Pods-RadioApp-RadioAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioApp-RadioAppUITests.release.xcconfig"; path = "Target Support Files/Pods-RadioApp-RadioAppUITests/Pods-RadioApp-RadioAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EDF9BD287684CC2531635ACA /* Pods-RadioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioApp.release.xcconfig"; path = "Target Support Files/Pods-RadioApp/Pods-RadioApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6862D899FC8BBEBB2FE1FCD2 /* Pods_RadioApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DC496DB647B16417901F06 /* Pods_RadioAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD57061AB11C07A564150308 /* Pods_RadioApp_RadioAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,8 @@
 				39F722142C77C17C00DB0CD1 /* RadioAppTests */,
 				39F7221E2C77C17C00DB0CD1 /* RadioAppUITests */,
 				39F722022C77C17B00DB0CD1 /* Products */,
+				6C0E192958E21AFAF44BF0C4 /* Pods */,
+				E1FFC8CC9EE265E15CB28894 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,29 @@
 			path = RadioAppUITests;
 			sourceTree = "<group>";
 		};
+		6C0E192958E21AFAF44BF0C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4A4B43A71D6295BD00FB9 /* Pods-RadioApp.debug.xcconfig */,
+				EDF9BD287684CC2531635ACA /* Pods-RadioApp.release.xcconfig */,
+				58E61ED9493CAF091B13049C /* Pods-RadioApp-RadioAppUITests.debug.xcconfig */,
+				ED3B55AE096C9FF8CCFF937D /* Pods-RadioApp-RadioAppUITests.release.xcconfig */,
+				CA03292A78081536608158D6 /* Pods-RadioAppTests.debug.xcconfig */,
+				8A2042214F69AFF00797ADE4 /* Pods-RadioAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1FFC8CC9EE265E15CB28894 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABDF6997E2E6205D5B94D831 /* Pods_RadioApp.framework */,
+				E1CE3C588BD3687DBB84ABF7 /* Pods_RadioApp_RadioAppUITests.framework */,
+				9D4A6FBA2B103D344355346F /* Pods_RadioAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39F722252C77C17C00DB0CD1 /* Build configuration list for PBXNativeTarget "RadioApp" */;
 			buildPhases = (
+				5683DDB8DC10EB0727B70AC1 /* [CP] Check Pods Manifest.lock */,
 				39F721FD2C77C17B00DB0CD1 /* Sources */,
 				39F721FE2C77C17B00DB0CD1 /* Frameworks */,
 				39F721FF2C77C17B00DB0CD1 /* Resources */,
+				317194B889FE9C1B9DDABD8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39F722282C77C17C00DB0CD1 /* Build configuration list for PBXNativeTarget "RadioAppTests" */;
 			buildPhases = (
+				993DE225BE8DD401C0288A7A /* [CP] Check Pods Manifest.lock */,
 				39F7220D2C77C17C00DB0CD1 /* Sources */,
 				39F7220E2C77C17C00DB0CD1 /* Frameworks */,
 				39F7220F2C77C17C00DB0CD1 /* Resources */,
@@ -169,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39F7222B2C77C17C00DB0CD1 /* Build configuration list for PBXNativeTarget "RadioAppUITests" */;
 			buildPhases = (
+				907E008389B418A31A50D9DC /* [CP] Check Pods Manifest.lock */,
 				39F722172C77C17C00DB0CD1 /* Sources */,
 				39F722182C77C17C00DB0CD1 /* Frameworks */,
 				39F722192C77C17C00DB0CD1 /* Resources */,
+				7F742D10882523D1ACDD81EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +296,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		317194B889FE9C1B9DDABD8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioApp/Pods-RadioApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioApp/Pods-RadioApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadioApp/Pods-RadioApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5683DDB8DC10EB0727B70AC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadioApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F742D10882523D1ACDD81EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioApp-RadioAppUITests/Pods-RadioApp-RadioAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioApp-RadioAppUITests/Pods-RadioApp-RadioAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadioApp-RadioAppUITests/Pods-RadioApp-RadioAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		907E008389B418A31A50D9DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadioApp-RadioAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		993DE225BE8DD401C0288A7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadioAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		39F721FD2C77C17B00DB0CD1 /* Sources */ = {
@@ -332,7 +480,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -395,7 +543,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -416,6 +564,7 @@
 		};
 		39F722262C77C17C00DB0CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE4A4B43A71D6295BD00FB9 /* Pods-RadioApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +593,7 @@
 		};
 		39F722272C77C17C00DB0CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF9BD287684CC2531635ACA /* Pods-RadioApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +622,7 @@
 		};
 		39F722292C77C17C00DB0CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA03292A78081536608158D6 /* Pods-RadioAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +642,7 @@
 		};
 		39F7222A2C77C17C00DB0CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2042214F69AFF00797ADE4 /* Pods-RadioAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +662,7 @@
 		};
 		39F7222C2C77C17C00DB0CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E61ED9493CAF091B13049C /* Pods-RadioApp-RadioAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +680,7 @@
 		};
 		39F7222D2C77C17C00DB0CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3B55AE096C9FF8CCFF937D /* Pods-RadioApp-RadioAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

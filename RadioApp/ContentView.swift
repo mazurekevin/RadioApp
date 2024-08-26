@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import SwiftyJSON
 
 struct ContentView: View {
+    
+    //let json: JSON? = nil
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
