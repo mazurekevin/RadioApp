@@ -1,28 +1,23 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  RadioApp
 //
-//  Created by teamdoc on 22/08/2024.
+//  Created by teamdoc on 27/08/2024.
 //
 
+import Foundation
 import SwiftUI
-import SwiftyJSON
 
-struct ContentView: View {
+struct HomeView: View {
     
-    let json: JSON? = nil
     
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Hello, Home!")
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

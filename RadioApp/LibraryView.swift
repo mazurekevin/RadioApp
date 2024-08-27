@@ -1,28 +1,22 @@
 //
-//  ContentView.swift
+//  LibraryView.swift
 //  RadioApp
 //
-//  Created by teamdoc on 22/08/2024.
+//  Created by teamdoc on 27/08/2024.
 //
 
+import Foundation
 import SwiftUI
-import SwiftyJSON
 
-struct ContentView: View {
-    
-    let json: JSON? = nil
-    
+struct LibraryView: View {
+        
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Hello, Library!")
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
