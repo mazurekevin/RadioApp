@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39E32EAB2C7E138F00FEB4D9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32EAA2C7E138F00FEB4D9 /* SplashScreenView.swift */; };
 		39F722052C77C17B00DB0CD1 /* RadioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F722042C77C17B00DB0CD1 /* RadioAppApp.swift */; };
 		39F722072C77C17B00DB0CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F722062C77C17B00DB0CD1 /* ContentView.swift */; };
 		39F722092C77C17C00DB0CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F722082C77C17C00DB0CD1 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1BE4A4B43A71D6295BD00FB9 /* Pods-RadioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioApp.debug.xcconfig"; path = "Target Support Files/Pods-RadioApp/Pods-RadioApp.debug.xcconfig"; sourceTree = "<group>"; };
+		39E32EAA2C7E138F00FEB4D9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		39F722012C77C17B00DB0CD1 /* RadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F722042C77C17B00DB0CD1 /* RadioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAppApp.swift; sourceTree = "<group>"; };
 		39F722062C77C17B00DB0CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				39F722062C77C17B00DB0CD1 /* ContentView.swift */,
 				39F722082C77C17C00DB0CD1 /* Assets.xcassets */,
 				39F7220A2C77C17C00DB0CD1 /* Preview Content */,
+				39E32EAA2C7E138F00FEB4D9 /* SplashScreenView.swift */,
 			);
 			path = RadioApp;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			files = (
 				39F722072C77C17B00DB0CD1 /* ContentView.swift in Sources */,
 				39F722052C77C17B00DB0CD1 /* RadioAppApp.swift in Sources */,
+				39E32EAB2C7E138F00FEB4D9 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

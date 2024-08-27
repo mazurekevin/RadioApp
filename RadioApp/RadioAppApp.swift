@@ -6,22 +6,14 @@
 //
 
 import SwiftUI
-import Alamofire
-import SwiftyJSON
+
 
 @main
 struct RadioAppApp: App {
     
-    
     var body: some Scene {
-        
-        
-        
         WindowGroup {
-            ContentView()
-            
-            
-            
+            SplashScreenView()
             
             
         }
