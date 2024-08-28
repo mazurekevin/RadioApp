@@ -13,6 +13,7 @@
 		39E32EB12C7E6D5400FEB4D9 /* RadioListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32EB02C7E6D5400FEB4D9 /* RadioListView.swift */; };
 		39E32EB32C7E6D6400FEB4D9 /* PodcastListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32EB22C7E6D6400FEB4D9 /* PodcastListView.swift */; };
 		39E32EB52C7E6D7D00FEB4D9 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32EB42C7E6D7D00FEB4D9 /* LibraryView.swift */; };
+		39E32EB72C7FA01C00FEB4D9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32EB62C7FA01C00FEB4D9 /* HeaderView.swift */; };
 		39F722052C77C17B00DB0CD1 /* RadioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F722042C77C17B00DB0CD1 /* RadioAppApp.swift */; };
 		39F722072C77C17B00DB0CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F722062C77C17B00DB0CD1 /* ContentView.swift */; };
 		39F722092C77C17C00DB0CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F722082C77C17C00DB0CD1 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		39E32EB02C7E6D5400FEB4D9 /* RadioListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListView.swift; sourceTree = "<group>"; };
 		39E32EB22C7E6D6400FEB4D9 /* PodcastListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListView.swift; sourceTree = "<group>"; };
 		39E32EB42C7E6D7D00FEB4D9 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		39E32EB62C7FA01C00FEB4D9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		39F722012C77C17B00DB0CD1 /* RadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F722042C77C17B00DB0CD1 /* RadioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAppApp.swift; sourceTree = "<group>"; };
 		39F722062C77C17B00DB0CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				39E32EB02C7E6D5400FEB4D9 /* RadioListView.swift */,
 				39E32EB22C7E6D6400FEB4D9 /* PodcastListView.swift */,
 				39E32EB42C7E6D7D00FEB4D9 /* LibraryView.swift */,
+				39E32EB62C7FA01C00FEB4D9 /* HeaderView.swift */,
 			);
 			path = RadioApp;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39F722072C77C17B00DB0CD1 /* ContentView.swift in Sources */,
+				39E32EB72C7FA01C00FEB4D9 /* HeaderView.swift in Sources */,
 				39E32EAD2C7E6A0500FEB4D9 /* NavBar.swift in Sources */,
 				39E32EB12C7E6D5400FEB4D9 /* RadioListView.swift in Sources */,
 				39F722052C77C17B00DB0CD1 /* RadioAppApp.swift in Sources */,

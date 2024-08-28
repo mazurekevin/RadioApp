@@ -12,10 +12,14 @@ struct LibraryView: View {
         
     var body: some View {
         VStack {
+            
+            HeaderView(title: "Bibliothèque").padding(.bottom, 20)
+            Spacer()
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, Library!")
+            Spacer()
         }
         .padding()
     }

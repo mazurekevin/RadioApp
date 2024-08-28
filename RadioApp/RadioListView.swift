@@ -12,10 +12,13 @@ struct RadioListView: View {
     
     var body: some View {
         VStack {
+            HeaderView(title: "Radios").padding(.bottom, 20)
+            Spacer()
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, Radio!")
+            Spacer()
         }
         .padding()
     }

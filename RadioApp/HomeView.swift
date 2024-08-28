@@ -13,10 +13,14 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
+            
+            HeaderView(title: "Accueil").padding(.bottom, 20)
+            Spacer()
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, Home!")
+            Spacer()
         }
         .padding()
     }

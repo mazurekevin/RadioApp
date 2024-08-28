@@ -31,6 +31,7 @@ struct NavBar: View{
                         Image(systemName: "books.vertical.fill")
                         Text("Bibliothèque")
                     }
+                
             }
         }
         

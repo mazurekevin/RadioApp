@@ -12,10 +12,13 @@ struct PodcastListView: View {
         
     var body: some View {
         VStack {
+            HeaderView(title: "Podcasts").padding(.bottom, 20)
+            Spacer()
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, Podcast!")
+            Spacer()
         }
         .padding()
     }
