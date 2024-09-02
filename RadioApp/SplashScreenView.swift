@@ -6,9 +6,6 @@
 //
 
 import Foundation
-// SplashScreenView.swift
-// RadioApp
-
 import SwiftUI
 
 struct SplashScreenView: View {
