@@ -20,7 +20,6 @@ struct HomeView: View {
         
         VStack {
             HeaderView(title: "Accueil").padding(.bottom, 10)
-            //Spacer()
             HStack{
                 Text("Musique")
                     .bold()
@@ -43,8 +42,9 @@ struct HomeView: View {
         .padding(.horizontal)
         .onAppear {
             fetchData()
+            //fetchDataTest()
         }
-        Spacer()
+        
     }
 
     func fetchData() {
@@ -63,6 +63,23 @@ struct HomeView: View {
             print("Erreur lors de la récupération des données : \(error.localizedDescription)")
         }
     }
+    
+    /*func fetchDataTest() {
+        let ref = Database.database().reference()
+
+        ref.child("prod/radio_main_music_items").observeSingleEvent(of: .value, with: { snapshot in
+            guard let value = snapshot.value else {
+                print("Aucune donnée trouvée à cet emplacement ou le format des données est incorrect.")
+                return
+            }
+
+            let jsonData = JSON(value)
+            let radioArray = jsonData.arrayValue
+            dump(jsonData)
+        }) { error in
+            print("Erreur lors de la récupération des données : \(error.localizedDescription)")
+        }
+    }*/
 }
 
 struct RadioItemView: View {

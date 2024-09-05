@@ -42,21 +42,6 @@ struct RadioAppApp: App {
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
-            
-            
         }
     }
 }
-
-/*{
-    "rules":{
-        "debug":{
-            ".read": "auth.uid != null",
-            ".write": "false"
-        },
-        "prod":{
-            ".read": "auth.uid != null",
-            ".write": "false"
-        }
-    }
-}*/

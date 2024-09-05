@@ -44,3 +44,42 @@ struct NavBar_Previews: PreviewProvider {
         NavBar()
     }
 }
+
+/*struct NavBar: View {
+    var body: some View {
+        TabView {
+            NavigationView {
+                HomeView()
+            }
+            .tabItem {
+                Image(systemName: "house")
+                Text("Accueil")
+            }
+
+            NavigationView {
+                RadioListView()
+            }
+            .tabItem {
+                Image(systemName: "radio")
+                Text("Radios")
+            }
+
+            NavigationView {
+                PodcastListView()
+            }
+            .tabItem {
+                Image(systemName: "waveform.circle.fill")
+                Text("Podcasts")
+            }
+
+            NavigationView {
+                LibraryView()
+            }
+            .tabItem {
+                Image(systemName: "books.vertical.fill")
+                Text("Bibliothèque")
+            }
+        }
+    }
+}*/
+

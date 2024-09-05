@@ -20,6 +20,8 @@
 		39E32EFB2C8318EE00FEB4D9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 39E32EFA2C8318EE00FEB4D9 /* FirebaseFirestore */; };
 		39E32EFD2C8318EE00FEB4D9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 39E32EFC2C8318EE00FEB4D9 /* FirebaseStorage */; };
 		39E32F102C87514400FEB4D9 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32F0F2C87514400FEB4D9 /* RadioStation.swift */; };
+		39E32F182C89F54C00FEB4D9 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32F172C89F54C00FEB4D9 /* Podcast.swift */; };
+		39E32F1E2C89FCB000FEB4D9 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32F1D2C89FCB000FEB4D9 /* Radio.swift */; };
 		39F722052C77C17B00DB0CD1 /* RadioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F722042C77C17B00DB0CD1 /* RadioAppApp.swift */; };
 		39F722072C77C17B00DB0CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F722062C77C17B00DB0CD1 /* ContentView.swift */; };
 		39F722092C77C17C00DB0CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F722082C77C17C00DB0CD1 /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 		39E32EB62C7FA01C00FEB4D9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		39E32EB82C7FA7FF00FEB4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		39E32F0F2C87514400FEB4D9 /* RadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		39E32F172C89F54C00FEB4D9 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		39E32F1D2C89FCB000FEB4D9 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
 		39F722012C77C17B00DB0CD1 /* RadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F722042C77C17B00DB0CD1 /* RadioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAppApp.swift; sourceTree = "<group>"; };
 		39F722062C77C17B00DB0CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				39E32F0F2C87514400FEB4D9 /* RadioStation.swift */,
+				39E32F172C89F54C00FEB4D9 /* Podcast.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,12 +129,45 @@
 		39E32F122C87525300FEB4D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				39E32EB42C7E6D7D00FEB4D9 /* LibraryView.swift */,
-				39E32EB22C7E6D6400FEB4D9 /* PodcastListView.swift */,
-				39E32EB02C7E6D5400FEB4D9 /* RadioListView.swift */,
-				39E32EAE2C7E6D3800FEB4D9 /* HomeView.swift */,
+				39E32F1C2C89FC9C00FEB4D9 /* Home */,
+				39E32F1B2C89FC7F00FEB4D9 /* Radio */,
+				39E32F1A2C89FC7300FEB4D9 /* Podcast */,
+				39E32F192C89FC6600FEB4D9 /* Library */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		39E32F192C89FC6600FEB4D9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				39E32EB42C7E6D7D00FEB4D9 /* LibraryView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		39E32F1A2C89FC7300FEB4D9 /* Podcast */ = {
+			isa = PBXGroup;
+			children = (
+				39E32EB22C7E6D6400FEB4D9 /* PodcastListView.swift */,
+			);
+			path = Podcast;
+			sourceTree = "<group>";
+		};
+		39E32F1B2C89FC7F00FEB4D9 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				39E32EB02C7E6D5400FEB4D9 /* RadioListView.swift */,
+				39E32F1D2C89FCB000FEB4D9 /* Radio.swift */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		39E32F1C2C89FC9C00FEB4D9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				39E32EAE2C7E6D3800FEB4D9 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		39F721F82C77C17B00DB0CD1 = {
@@ -472,8 +510,10 @@
 				39E32EAD2C7E6A0500FEB4D9 /* NavBar.swift in Sources */,
 				39E32EB12C7E6D5400FEB4D9 /* RadioListView.swift in Sources */,
 				39F722052C77C17B00DB0CD1 /* RadioAppApp.swift in Sources */,
+				39E32F1E2C89FCB000FEB4D9 /* Radio.swift in Sources */,
 				39E32EB52C7E6D7D00FEB4D9 /* LibraryView.swift in Sources */,
 				39E32EAF2C7E6D3800FEB4D9 /* HomeView.swift in Sources */,
+				39E32F182C89F54C00FEB4D9 /* Podcast.swift in Sources */,
 				39E32EAB2C7E138F00FEB4D9 /* SplashScreenView.swift in Sources */,
 				39E32F102C87514400FEB4D9 /* RadioStation.swift in Sources */,
 				39E32EB32C7E6D6400FEB4D9 /* PodcastListView.swift in Sources */,
