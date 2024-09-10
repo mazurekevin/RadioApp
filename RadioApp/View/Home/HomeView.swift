@@ -17,34 +17,36 @@ struct HomeView: View {
     @State private var radioStations: [RadioStation] = []
 
     var body: some View {
-        
-        VStack {
-            HeaderView(title: "Accueil").padding(.bottom, 10)
-            HStack{
-                Text("Musique")
-                    .bold()
-                    .font(.title2)
-                Spacer()
-            }
-            .padding(.bottom,5)
-            .padding(.horizontal,15)
-            ScrollView(.horizontal) {
-                LazyHStack {
-                    ForEach(radioStations.indices, id: \.self) { index in
-                        RadioItemView(radio: $radioStations[index])
+        NavigationView{
+            VStack {
+                HeaderView(title: "Accueil").padding(.bottom, 10)
+                HStack{
+                    Text("Musique")
+                        .bold()
+                        .font(.title2)
+                    Spacer()
+                }
+                .padding(.bottom,5)
+                .padding(.horizontal,15)
+                ScrollView(.horizontal) {
+                    LazyHStack {
+                        ForEach(radioStations.indices, id: \.self) { index in
+                            NavigationLink(destination: RadioView(radio: radioStations[index])) {
+                            RadioItemView(radio: $radioStations[index])
+                            }
+                        }
                     }
                 }
+                .frame(height: 200)
+                .scrollIndicators(.hidden)
+                Spacer()
             }
-            .frame(height: 200)
-            .scrollIndicators(.hidden)
-            Spacer()
+            .padding(.horizontal)
+            .onAppear {
+                fetchData()
+                //fetchDataTest()
+            }
         }
-        .padding(.horizontal)
-        .onAppear {
-            fetchData()
-            //fetchDataTest()
-        }
-        
     }
 
     func fetchData() {
@@ -59,6 +61,7 @@ struct HomeView: View {
             let jsonData = JSON(value)
             let radioArray = jsonData.arrayValue
             self.radioStations = radioArray.map { RadioStation(json: $0) }
+            //dump(self.radioStations.first)
         }) { error in
             print("Erreur lors de la récupération des données : \(error.localizedDescription)")
         }
@@ -111,6 +114,7 @@ struct RadioItemView: View {
         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 0)
     }
 }
+
 
 
 
