@@ -14,7 +14,9 @@ struct RadioView: View {
     var radio: RadioStation
     
     @State private var isPlaying = false
+    @State private var isFavorite = false
     @State private var player: AVPlayer?
+    var listOfRadio: [RadioStation] = DataManager.instance.radioList
     
     var body: some View {
         VStack {
@@ -51,11 +53,18 @@ struct RadioView: View {
                 
                 HStack {
                     Button(action: {
+                        
+                    }) {
+                        Image(systemName: "square.and.arrow.up")
+                            .font(.largeTitle)
+                    }
+                    
+                    Button(action: {
                        
                     }) {
                         Image(systemName: "backward.fill")
                             .font(.largeTitle)
-                    }
+                    }.padding(.horizontal, 10)
                     
                     Button(action: {
                         isPlaying.toggle()
@@ -74,6 +83,18 @@ struct RadioView: View {
                         
                     }) {
                         Image(systemName: "forward.fill")
+                            .font(.largeTitle)
+                    }.padding(.horizontal, 10)
+                    
+                    Button(action: {
+                        isFavorite.toggle()
+                        if isFavorite {
+                            //playStream()
+                        } else {
+                            //pauseStream()
+                        }
+                    }) {
+                        Image(systemName: isFavorite ? "heart.fill" : "heart")
                             .font(.largeTitle)
                     }
                 }

@@ -82,6 +82,7 @@ struct HomeView: View {
             let radioArray = jsonData.arrayValue
             self.radioStations = radioArray.map { RadioStation(json: $0) }
             //dump(self.radioStations.first)
+            DataManager.instance.radioList = self.radioStations
         }) { error in
             print("Erreur lors de la récupération des données : \(error.localizedDescription)")
         }
@@ -95,6 +96,7 @@ struct HomeView: View {
             let jsonData = JSON(value)
             let podcastArray = jsonData.arrayValue
             self.podcastList = podcastArray.map { Podcast(json: $0) }
+            DataManager.instance.podcastList = self.podcastList
         }) { error in
             print("Erreur lors de la récupération des données : \(error.localizedDescription)")
         }
