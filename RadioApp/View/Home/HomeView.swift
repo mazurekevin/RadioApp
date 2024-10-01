@@ -51,9 +51,9 @@ struct HomeView: View {
                 ScrollView(.horizontal) {
                     LazyHStack {
                         ForEach(podcastList.indices, id: \.self) { index in
-                            //NavigationLink(destination: RadioView(radio: radioStations[index])) {
+                            NavigationLink(destination: PodcastView(podcast: podcastList[index])) {
                             PodcastItemView(podcast: $podcastList[index])
-                            //}
+                            }
                         }
                     }
                 }
