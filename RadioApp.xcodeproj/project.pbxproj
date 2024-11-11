@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		392C26182CAC3A85000C913A /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C26172CAC3A85000C913A /* PodcastView.swift */; };
+		392C261C2CE29CD6000C913A /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C261B2CE29CD6000C913A /* PersistenceController.swift */; };
+		392C261E2CE29E1E000C913A /* Podcast2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C261D2CE29E1E000C913A /* Podcast2.swift */; };
 		39E32EAB2C7E138F00FEB4D9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32EAA2C7E138F00FEB4D9 /* SplashScreenView.swift */; };
 		39E32EAD2C7E6A0500FEB4D9 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32EAC2C7E6A0500FEB4D9 /* NavBar.swift */; };
 		39E32EAF2C7E6D3800FEB4D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E32EAE2C7E6D3800FEB4D9 /* HomeView.swift */; };
@@ -58,6 +60,8 @@
 /* Begin PBXFileReference section */
 		1BE4A4B43A71D6295BD00FB9 /* Pods-RadioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioApp.debug.xcconfig"; path = "Target Support Files/Pods-RadioApp/Pods-RadioApp.debug.xcconfig"; sourceTree = "<group>"; };
 		392C26172CAC3A85000C913A /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
+		392C261B2CE29CD6000C913A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		392C261D2CE29E1E000C913A /* Podcast2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast2.swift; sourceTree = "<group>"; };
 		39E32EAA2C7E138F00FEB4D9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		39E32EAC2C7E6A0500FEB4D9 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		39E32EAE2C7E6D3800FEB4D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				39E32F0F2C87514400FEB4D9 /* RadioStation.swift */,
 				39E32F172C89F54C00FEB4D9 /* Podcast.swift */,
 				39E32F2C2C94C10A00FEB4D9 /* DataManager.swift */,
+				392C261D2CE29E1E000C913A /* Podcast2.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				39E32EAA2C7E138F00FEB4D9 /* SplashScreenView.swift */,
 				39E32EAC2C7E6A0500FEB4D9 /* NavBar.swift */,
 				39E32EB62C7FA01C00FEB4D9 /* HeaderView.swift */,
+				392C261B2CE29CD6000C913A /* PersistenceController.swift */,
 			);
 			path = RadioApp;
 			sourceTree = "<group>";
@@ -548,9 +554,11 @@
 				39E32EAD2C7E6A0500FEB4D9 /* NavBar.swift in Sources */,
 				392C26182CAC3A85000C913A /* PodcastView.swift in Sources */,
 				39E32EB12C7E6D5400FEB4D9 /* RadioListView.swift in Sources */,
+				392C261E2CE29E1E000C913A /* Podcast2.swift in Sources */,
 				39E32F272C93326200FEB4D9 /* PodcastItemView.swift in Sources */,
 				39F722052C77C17B00DB0CD1 /* RadioAppApp.swift in Sources */,
 				39E32F1E2C89FCB000FEB4D9 /* Radio.swift in Sources */,
+				392C261C2CE29CD6000C913A /* PersistenceController.swift in Sources */,
 				39E32EB52C7E6D7D00FEB4D9 /* LibraryView.swift in Sources */,
 				39E32EAF2C7E6D3800FEB4D9 /* HomeView.swift in Sources */,
 				39E32F182C89F54C00FEB4D9 /* Podcast.swift in Sources */,

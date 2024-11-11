@@ -9,6 +9,7 @@ import SwiftUI
 import Firebase
 import FirebaseCore
 import FirebaseAuth
+import CoreData
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     
@@ -37,11 +38,14 @@ struct RadioAppApp: App {
     
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    let persistenceController = PersistenceController.shared
 
         
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

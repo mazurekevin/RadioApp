@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftyJSON
+import CoreData
 
 struct Podcast: Identifiable {
     var id: String
@@ -79,3 +80,5 @@ struct Podcast: Identifiable {
         lastUpdateTime = json["lastUpdateTime"].intValue
     }
 }
+
+
