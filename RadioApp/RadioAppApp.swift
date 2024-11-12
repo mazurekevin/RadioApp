@@ -39,13 +39,13 @@ struct RadioAppApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-    let persistenceController = PersistenceController.shared
+    //let persistenceController = PersistenceController.shared
 
         
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                //.environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
