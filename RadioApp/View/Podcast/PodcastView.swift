@@ -8,38 +8,37 @@
 import SwiftUI
 import CoreData
 
+
 struct PodcastView: View {
     
     var podcast: Podcast
     
     @State private var name: String = ""
     @State private var people: [String] = [] // Stocker les noms
+    private let repository = PeopleRepository()
     
-    // Méthode pour récupérer les personnes depuis Core Data
-    private func loadPeople() {
-        let request: NSFetchRequest<Person> = Person.fetchRequest()
-        
-        guard let fetchedPeople = try? CoreDataStack.sharedInstance.viewContext.fetch(request) else {
-            return
+    // Fonction pour charger les personnes depuis Core Data
+    private func getPeople() {
+        repository.getPersons { persons in
+            // Mise à jour de la liste des personnes dans l'état SwiftUI
+            DispatchQueue.main.async {
+                self.people = persons.compactMap { $0.name }
+            }
         }
-        
-        // Mettre à jour l'état avec les noms des personnes
-        people = fetchedPeople.compactMap { $0.name }
     }
-    
+
     private func addPerson() {
         if !name.isEmpty {
-            people.append(name)
-            savePerson(named: name)
-            name = "" // Réinitialiser le champ de texte après ajout
+            repository.savePerson(named: name) {
+                // Ajouter la personne localement à la liste
+                DispatchQueue.main.async {
+                    self.people.append(name)
+                    self.name = "" // Réinitialiser le champ de texte
+                }
+            }
         }
     }
-    
-    private func savePerson(named name: String) {
-        let person = Person(context: CoreDataStack.sharedInstance.viewContext)
-        person.name = name
-        try? CoreDataStack.sharedInstance.viewContext.save()
-    }
+
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -66,7 +65,7 @@ struct PodcastView: View {
         }
         .padding()
         .onAppear {
-            loadPeople() // Charger les personnes au démarrage de la vue
+            getPeople() // Charger les personnes au démarrage de la vue
         }
     }
 }
