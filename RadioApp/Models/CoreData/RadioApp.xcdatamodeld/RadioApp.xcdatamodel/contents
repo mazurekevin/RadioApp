@@ -5,4 +5,10 @@
         <attribute name="lastName" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="User" representedClassName=".User" syncable="YES" codeGenerationType="category">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstname" optional="YES" attributeType="String"/>
+        <attribute name="lastname" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+    </entity>
 </model>

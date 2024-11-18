@@ -15,9 +15,29 @@ struct CreateAccountView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var CheckPassword: String = ""
+    @State private var navigateToHome: Bool = false
+    
+    private let repository = UserRepository()
     
     private func createAccount(){
-        
+        if !firstname.isEmpty && !lastname.isEmpty && !email.isEmpty && !password.isEmpty{
+            if password == CheckPassword{
+                repository.saveUser(named: firstname, lastname: lastname, email: email, password: password){
+                    DispatchQueue.main.async{
+                        /*repository.getUsers { users in
+                            print(users.first?.lastname)
+                            print(users.first?.firstname)
+                            print(users.first?.email)
+                            print(users.first?.password)
+                            dump(users)
+                            
+                        }*/
+                        
+                        navigateToHome = true
+                    }
+                }
+            }
+        }
     }
     
     var body: some View {
@@ -48,8 +68,12 @@ struct CreateAccountView: View {
                 Spacer()
                 Button("Valider", action: {
                     createAccount()
+                    
                 })
                 Spacer().frame(height: 100)
+                NavigationLink(destination: NavBar(), isActive: $navigateToHome) {
+                    EmptyView()
+                }
             })
             .padding()
         })
