@@ -41,7 +41,7 @@ struct CreateAccountView: View {
     }
     
     var body: some View {
-        NavigationView(content: {
+        NavigationStack(root: {
             VStack(alignment: .center, spacing: 20, content: {
                 Spacer().frame(height: 100)
                 Text("Créer un compte")

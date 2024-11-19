@@ -12,6 +12,9 @@ import Foundation
 class DataManager: NSObject {
 
     static var instance = DataManager()
+    
+    ///user
+    var user: User?
 
     /// radio
     var radioList: [RadioStation]
@@ -26,6 +29,7 @@ class DataManager: NSObject {
         favoriteRadioList = []
         podcastList = []
         favoritePodcastList = []
+        user = nil
         super.init()
     }
 

@@ -43,6 +43,20 @@ final class UserRepository {
        }
     }
     
+    func getUserByEmail(email: String, completion: (User?) -> Void) {
+        let request: NSFetchRequest<User> = User.fetchRequest()
+        request.predicate = NSPredicate(format: "email == %@", email) 
+        
+        do {
+            let users = try coreDataStack.viewContext.fetch(request)
+            completion(users.first)
+        } catch {
+            print("Erreur lors de la récupération de l'utilisateur par email : \(error.localizedDescription)")
+            completion(nil)
+        }
+    }
+
+    
     func clearAllData() {
         let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "User")
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)

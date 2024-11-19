@@ -13,15 +13,30 @@ struct LoginView: View {
     
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var navigateToHome: Bool = false
     
     private func login(){
-        
+        let repository = UserRepository()
+        repository.getUserByEmail(email: email) { user in
+            if let user = user {
+                print("Utilisateur trouvé : \(user.firstname ?? "") \(user.lastname ?? "")")
+                if user.password == password{
+                    DataManager.instance.user = user
+                    navigateToHome = true
+                }else{
+                    print("pas le bon password")
+                }
+            } else {
+                print("Aucun utilisateur trouvé avec cet email.")
+            }
+        }
+
     }
 
     
     var body: some View {
         
-        NavigationView(content: {
+        NavigationStack(root: {
             VStack {
                 // Titre avec un Spacer pour le placer à 100 points du haut de l'écran
                 Spacer().frame(height: 100)
@@ -60,6 +75,9 @@ struct LoginView: View {
 
                 // Spacer final pour placer les boutons à 100 points du bas
                 Spacer().frame(height: 100)
+                NavigationLink(destination: NavBar(), isActive: $navigateToHome) {
+                    EmptyView()
+                }
             }
             .padding(.horizontal) // Espacement général sur les côtés
         })
