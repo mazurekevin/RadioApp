@@ -37,6 +37,7 @@ final class UserRepository {
         user.password = password
        do {
          try coreDataStack.viewContext.save()
+           DataManager.instance.user = user
          completion()
        } catch {
          print("We were unable to save \(firstname)")

@@ -24,14 +24,7 @@ struct CreateAccountView: View {
             if password == CheckPassword{
                 repository.saveUser(named: firstname, lastname: lastname, email: email, password: password){
                     DispatchQueue.main.async{
-                        /*repository.getUsers { users in
-                            print(users.first?.lastname)
-                            print(users.first?.firstname)
-                            print(users.first?.email)
-                            print(users.first?.password)
-                            dump(users)
-                            
-                        }*/
+                        
                         
                         navigateToHome = true
                     }
